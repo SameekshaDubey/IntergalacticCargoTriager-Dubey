@@ -27,7 +27,9 @@ for (const line of lines) {
     let weight = Number(match[3]);
     const destination = match[4];
 
-
+    if (destination.includes("Sector-7")) {
+        weight *= 1.45;
+    }
     // added
     weight = Math.round(weight);
 
