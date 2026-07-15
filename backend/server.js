@@ -2,7 +2,7 @@ const express = require("express");
 
 const app = express();
 
-const cargo = require("./cargo.json");
+const cargo = require("../cargo.json");
 
 
 app.get("/api/cargo", (req, res) => {
