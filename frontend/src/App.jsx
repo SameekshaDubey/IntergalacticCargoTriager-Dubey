@@ -29,6 +29,15 @@ function App() {
   // Sync button
 
   
+  const syncData = () => {
+    setLoading(true);
+
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  };
+
+
   return (
     <div style={{ padding: "30px" }}>
       <h1>Intergalactic Cargo Dashboard</h1>
