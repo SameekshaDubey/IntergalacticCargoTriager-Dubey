@@ -46,3 +46,7 @@ for (const line of lines) {
 }
 
 // read 
+fs.writeFileSync(
+    "cargo.json",
+    JSON.stringify(cargo, null, 2)
+);
